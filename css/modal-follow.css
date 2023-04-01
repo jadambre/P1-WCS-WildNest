@@ -1,0 +1,74 @@
+/* Modal background */
+
+.modal-container {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.67);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms ease;
+}
+
+.modal-container:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-content {
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin: auto;
+  width: 250px;
+  height: 364px;
+  width: 250px;
+  height: 364px;
+  border-radius: 15px;
+  /* display: none; */
+  /* background-color: white; */
+}
+
+.openBtn:hover {
+  cursor: pointer;
+}
+
+.closeBtn {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--texteMarron);
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.closeBtn:hover {
+  color: var(--texteRouge);
+}
+
+/* Modal content box */
+
+/* .modalContent {
+    background-color: #705757;
+    border: 1px solid #888;
+}
+
+.close {
+    color: #aea3a3;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} */
+
+/* placer en absolu par rapport à la div générale top 0 left 0*/

@@ -1,0 +1,140 @@
+.global-profil-container {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  position: sticky;
+  top: 99px;
+}
+
+.profil-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  /* height: 364px; */
+  box-shadow: var(--ombresCartes);
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.profil-card-container:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  /* cursor: pointer; */
+}
+
+.profil-card-top {
+  background-color: var(--rosePale);
+  width: 100%;
+  height: 55px;
+  border-bottom: solid 3px var(--texteMarron);
+  box-shadow: 0px 4px 3px 0px #ae888a;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  flex-direction: row-reverse;
+  /* align-items: center; */
+}
+
+.profil-card-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--rose);
+  width: 100%;
+  padding: var(--paddingDefaut);
+}
+
+img.user-avatar {
+  width: 75px;
+  height: auto;
+  border-radius: 50px;
+  margin-top: -58px;
+  box-shadow: var(--ombresBouttons);
+  margin-bottom: 10px;
+  border: solid 1px var(--blanc);
+}
+
+h1.user-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--texteRouge);
+}
+
+h2.user-email {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--blanc);
+  margin-bottom: 15px;
+}
+
+p.user-biography {
+  font-family: "Open Sans", sans-serif;
+  color: var(--texteRouge);
+  font-size: var(--tailleTitre3);
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.followers-container {
+  display: flex;
+  width: 100%;
+}
+
+.following-bloc,
+.followers-bloc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: solid 1px var(--blanc);
+  border-bottom: solid 1px var(--blanc);
+  background-color: var(--rose);
+  padding: 5px 10px;
+}
+.following-bloc {
+  border-right: solid 1px var(--blanc);
+}
+
+.follow-number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: var(--tailleTitre2);
+  color: var(--blanc);
+}
+
+.follow-text {
+  font-family: "Montserrat", sans-serif;
+  color: var(--blanc);
+  font-size: var(--tailleParagraphe);
+  font-weight: var(--weightNormal);
+}
+
+.follow-text a,
+.follow-number a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.profil-card-bottom {
+  width: 100%;
+  text-align: center;
+  background-color: var(--rose);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+}
+
+.profil-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--texteRouge);
+}

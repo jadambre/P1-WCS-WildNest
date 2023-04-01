@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1663659b59.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f6dcf461c1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="" />
+        </a>
+      </div>
+
+      <div class="items">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="index.html" class="itemnav"
+              ><i class="fa-solid fa-house"></i
+            ></a>
+          </button>
+        </div>
+
+        <div class="dropdown notif">
+          <button class="dropbtn">
+            <a href="#" class="itemnav"><i class="fa-solid fa-bell"></i></a>
+          </button>
+          <div class="dropdown-content-bis">
+            <div class="icon-notif" id="one">
+              <img src="images/romain.JPG" alt="" />
+              <a class="lienItem" href="conversation.html">
+                New message<br />
+                from Romain
+              </a>
+            </div>
+            <hr class="separate" />
+            <div class="icon-notif">
+              <img src="images/rudy.JPG" alt="" />
+              <a class="lienItem" id="two" href="conversationRudy.html">
+                New message<br />
+                from Rudy</a
+              >
+            </div>
+            <hr class="separate" />
+            <div class="icon-notif">
+              <img src="images/Mohamed.JPG" alt="" />
+              <a class="lienItem" href="conversationMoha.html">
+                New message<br />
+                from Moha
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="messages.html" class="itemnav"
+              ><i class="fa-solid fa-paper-plane"></i
+            ></a>
+          </button>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="#" class="itemnav"><i class="fa-solid fa-gear"></i></a>
+          </button>
+          <div class="dropdown-content">
+            <a class="lienItem" href="#">Parameter</a>
+            <hr class="separate-two" />
+            <a class="lienItem" id="three" href="#">Log out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="user-header">
+      <div class="user-info">
+        <img src="images/rudy.JPG" alt="photo de profil utilisateur" />
+        <h1>Rudy</h1>
+        <h2>@Rudy59128</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="conversation">
+        <!--1er message-->
+        <div class="date">Thursday, March 23</div>
+        <div class="bloc1">
+          <div class="message-received">
+            <div class="user">
+              <img src="images/rudy.JPG" alt="photo de profil utilisateur" />
+              <div class="user-infos-container">
+                <h2>Rudy</h2>
+                <h3>@Rudy59128</h3>
+              </div>
+            </div>
+            <div class="message-content">
+              <p>Hello Jade, ça va bien ?</p>
+            </div>
+          </div>
+          <div class="time-received">09:00 AM</div>
+          <div class="time-sent">09:16 AM</div>
+        </div>
+        <!--2ème message-->
+        <div class="bloc2">
+          <div class="message-sent">
+            <div class="user2">
+              <img src="images/jade.JPG" alt="photo de profil utilisateur" />
+              <div class="user-infos-container">
+                <h2>Jade-Ambre</h2>
+                <h3>@jadambre</h3>
+              </div>
+            </div>
+            <div class="message-content">
+              <p>Salut Rudy, super et toi ?</p>
+            </div>
+          </div>
+        </div>
+        <!--3ème message-->
+        <div class="bloc3">
+          <div class="message-received">
+            <div class="user">
+              <img src="images/rudy.JPG" alt="photo de profil utilisateur" />
+              <div class="user-infos-container">
+                <h2>Rudy</h2>
+                <h3>@Rudy59128</h3>
+              </div>
+            </div>
+            <div class="message-content">
+              <p>Nickel merci, j'enchaîne les scripts là !</p>
+            </div>
+          </div>
+          <div class="time-received">09:25 AM</div>
+          <div class="time-sent">09:32 AM</div>
+        </div>
+        <!--4ème message-->
+        <div class="bloc4">
+          <div class="message-sent">
+            <div class="user2">
+              <img src="images/jade.JPG" alt="photo de profil utilisateur" />
+              <div class="user-infos-container">
+                <h2>Jade-Ambre</h2>
+                <h3>@jadambre</h3>
+              </div>
+            </div>
+            <div class="message-content">
+              <p>Ah ouais la machine, à fond sur le JS!</p>
+            </div>
+          </div>
+        </div>
+        <!--5ème message-->
+        <div class="status">Read 09:37 AM</div>
+        <div class="bloc5">
+          <div class="message-received">
+            <div class="user">
+              <img src="images/rudy.JPG" alt="photo de profil utilisateur" />
+              <div class="user-infos-container">
+                <h2>Rudy</h2>
+                <h3>@Rudy59128</h3>
+              </div>
+            </div>
+            <div class="message-content">
+              <p>
+                Pas cette fois, là ça concerne le manga que j'écris avec un ami.
+              </p>
+            </div>
+          </div>
+          <div class="time-received">09:39 AM</div>
+        </div>
+      </div>
+    </div>
+    <!--Start a message-->
+    <div class="form-container">
+      <form id="message-form">
+        <input
+          type="text"
+          id="message-input"
+          placeholder="Start a message..."
+        />
+        <button type="submit" class="conversation-button">Send</button>
+      </form>
+    </div>
+
+    <div id="navMobile">
+      <div class="navicon">
+        <div class="itemMob">
+          <a href="index.html"><i class="fa-solid fa-house itemnav"></i></a>
+        </div>
+        <div class="itemMob">
+          <a href="trendsMobile.html"
+            ><i class="fa-solid fa-arrow-trend-up itemnav"></i
+          ></a>
+        </div>
+        <div>
+          <a href=""><img src="images/jade.JPG" alt="photo chat" /></a>
+        </div>
+        <div class="itemMob">
+          <a href="notifications.html"
+            ><i class="fa-solid fa-bell itemnav"></i
+          ></a>
+        </div>
+        <div class="itemMob">
+          <a href="messages.html"
+            ><i class="fa-solid fa-paper-plane itemnav"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/message.js"></script>
+  </body>
+</html>

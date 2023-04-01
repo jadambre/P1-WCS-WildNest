@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P1 Project WCS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1663659b59.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f6dcf461c1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="" />
+        </a>
+      </div>
+
+      <div class="items">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="index.html" class="itemnav"
+              ><i class="fa-solid fa-house"></i
+            ></a>
+          </button>
+        </div>
+
+        <div class="dropdown notif">
+          <button class="dropbtn">
+            <a href="#" class="itemnav"><i class="fa-solid fa-bell"></i></a>
+          </button>
+          <div class="dropdown-content-bis">
+            <div class="icon-notif" id="one">
+              <img src="images/romain.JPG" alt="" />
+              <a class="lienItem" href="conversation.html">
+                New message<br />
+                from Romain
+              </a>
+            </div>
+            <hr class="separate" />
+            <div class="icon-notif">
+              <img src="images/rudy.JPG" alt="" />
+              <a class="lienItem" id="two" href="conversationRudy.html">
+                New message<br />
+                from Rudy</a
+              >
+            </div>
+            <hr class="separate" />
+            <div class="icon-notif">
+              <img src="images/Mohamed.JPG" alt="" />
+              <a class="lienItem" href="conversationMoha.html">
+                New message<br />
+                from Mohamed
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="messages.html" class="itemnav"
+              ><i class="fa-solid fa-paper-plane"></i
+            ></a>
+          </button>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="#" class="itemnav"><i class="fa-solid fa-gear"></i></a>
+          </button>
+          <div class="dropdown-content">
+            <a class="lienItem" href="#">Parameter</a>
+            <hr class="separate-two" />
+            <a class="lienItem" id="three" href="#">Log out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="body-middle-container">
+      <div class="global-profil-container">
+        <div class="profil-card-container">
+          <div class="profil-card-top"></div>
+
+          <div class="profil-card-middle">
+            <img src="images/jade.JPG" alt="" class="user-avatar" />
+            <h1 class="user-name">Jade-Ambre</h1>
+            <h2 class="user-email">@jadambre</h2>
+            <p class="user-biography">
+              Passionnée de dessin, littérature et voyages.
+            </p>
+          </div>
+
+          <div class="followers-container">
+            <div class="following-bloc">
+              <h2 class="follow-number"><a href="./followers.html">4</a></h2>
+              <h3 class="follow-text">
+                <a href="./followers.html">Following</a>
+              </h3>
+            </div>
+            <div class="followers-bloc">
+              <h2 class="follow-number"><a href="./followers.html">4</a></h2>
+              <h3 class="follow-text">
+                <a href="./followers.html">Followers</a>
+              </h3>
+            </div>
+          </div>
+
+          <div class="profil-card-bottom">
+            <h2 class="profil-link">My Profile</h2>
+          </div>
+        </div>
+
+        <div class="people-suggest-container">
+          <h1 class="title-suggest">People you may know</h1>
+          <div class="separateur-suggest"></div>
+          <div class="profile">
+            <a href="#disclaimer1"
+              ><img
+                class="avatar openBtn"
+                src="images/fantine.JPG"
+                alt="Avatar de l'utilisateur Fantine"
+            /></a>
+            <div class="adjust-text">
+              Fantine <br />
+              @Fanti
+            </div>
+            <button class="follow-button">Follow</button>
+          </div>
+          <div class="profile">
+            <a href="#disclaimer2"
+              ><img
+                class="avatar openBtn"
+                src="images/alexvador.JPG"
+                alt="Avatar de l'utilisateur Alex"
+            /></a>
+            <div class="adjust-text">
+              Alex<br />
+              @Vador
+            </div>
+            <button class="follow-button">Follow</button>
+          </div>
+          <div class="profile">
+            <a href="#disclaimer3"
+              ><img
+                class="avatar openBtn"
+                src="images/alextrot.JPG"
+                alt="Avatar de l'utilisateur Alex"
+            /></a>
+            <div class="adjust-text">
+              Alex<br />
+              @Trot'
+            </div>
+            <button class="follow-button">Follow</button>
+          </div>
+          <div class="profile">
+            <a href="#disclaimer4"
+              ><img
+                class="avatar openBtn"
+                src="images/alexrouz.JPG"
+                alt="Avatar de l'utilisateur Alex"
+            /></a>
+            <div class="adjust-text">
+              Alex <br />
+              @Plaza
+            </div>
+            <button class="follow-button">Follow</button>
+          </div>
+          <h2 class="show-more">Show more</h2>
+        </div>
+      </div>
+
+      <div class="global-posts-container">
+        <div class="user-posts-container">
+          <form class="form-post">
+            <label for="user-post"></label>
+            <input
+              type="text"
+              name="user-post"
+              id="user-post"
+              placeholder="What's happening ?"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='What \'s happening ?'"
+            />
+            <div class="buttons-container">
+              <input type="submit" value="" id="post-button" />
+              <input id="video-post-button" />
+              <input id="photo-post-button" />
+            </div>
+          </form>
+        </div>
+
+        <div class="posts-container">
+          <div class="posts-card" id="post1-rudy">
+            <div class="posts-user-infos">
+              <img
+                src="images/rudy.JPG"
+                alt="avatar"
+                class="posts-user-avatar"
+              />
+              <h1 class="posts-user-name">Rudy</h1>
+              <h2 class="user-mail">@Rudy59128</h2>
+            </div>
+            <div class="posts-text-bloc">
+              <p class="posts-text">On ne fait jamais trop de pâtes.</p>
+            </div>
+
+            <div class="post-like-bloc">
+              <button onclick="Toggle1()" id="btnh1" class="btn">
+                <i class="fas fa-heart"></i>
+              </button>
+              <span class="number-of-likes" id="nb-likes-1"
+                >6<span class="likes-text"> Likes</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="posts-card" id="post2-val">
+            <div class="posts-user-infos">
+              <img
+                src="images/val.JPG"
+                alt="avatar"
+                class="posts-user-avatar"
+              />
+              <h1 class="posts-user-name">Val</h1>
+              <h2 class="user-mail">@mlAgostini</h2>
+            </div>
+            <div class="posts-text-bloc">
+              <p class="posts-text">J'ai une encéphalorectumite aigüe.</p>
+            </div>
+
+            <div class="post-like-bloc">
+              <button onclick="Toggle2()" id="btnh2" class="btn">
+                <i class="fas fa-heart"></i>
+              </button>
+              <span class="number-of-likes" id="nb-likes-2"
+                >2<span class="likes-text"> Likes</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="posts-card" id="post3-jade">
+            <div class="posts-user-infos">
+              <img
+                src="images/romain.JPG"
+                alt="avatar"
+                class="posts-user-avatar"
+              />
+              <h1 class="posts-user-name">Romain</h1>
+              <h2 class="user-mail">@Romain-Constant</h2>
+            </div>
+            <div class="posts-text-bloc">
+              <p class="posts-text">La puissance!!</p>
+            </div>
+
+            <div class="post-like-bloc">
+              <button onclick="Toggle3()" id="btnh3" class="btn">
+                <i class="fas fa-heart"></i>
+              </button>
+              <span class="number-of-likes" id="nb-likes-3"
+                >4<span class="likes-text"> Likes</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="posts-card" id="post4-mohamed">
+            <div class="posts-user-infos">
+              <img
+                src="images/Mohamed.JPG"
+                alt="avatar"
+                class="posts-user-avatar"
+              />
+              <h1 class="posts-user-name">Moha</h1>
+              <h2 class="user-mail">@MohamedAmarPro</h2>
+            </div>
+            <div class="posts-text-bloc">
+              <p class="posts-text">J'adore les commercials...ciaux ?</p>
+            </div>
+
+            <div class="post-like-bloc">
+              <button onclick="Toggle4()" id="btnh4" class="btn">
+                <i class="fas fa-heart"></i>
+              </button>
+              <span class="number-of-likes" id="nb-likes-4"
+                >8<span class="likes-text"> Likes</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="global-trends-container">
+        <div class="trends-card-container">
+          <div class="trends-card-top">
+            <p class="trend-title">Trends for you</p>
+            <div class="trends-icon-container"></div>
+          </div>
+          <div class="trends-card-middle">
+            <p class="trends-title">Trending in France</p>
+            <p class="trends-hashtags">
+              <a
+                href="https://www.google.com/search?q=gr%C3%A8ve&hl=fr&sxsrf=AJOqlzW8qXDZ_zb0lesRAI75FpJgETuNlg:1678952598279&source=lnms&tbm=nws&sa=X&ved=2ahUKEwi8-tvp-d_9AhUMTKQEHQ80Bn4Q_AUoAXoECAEQAw&biw=1526&bih=722&dpr=1"
+                target="_blank"
+                >#Grève</a
+              >
+            </p>
+            <p class="trends-tweets">97,5k Weets</p>
+            <p class="trends-hashtags">
+              <a href="./images/griffith.jpg" target="_blank">#Griffith</a>
+            </p>
+            <p class="trends-tweets">4193 Weets</p>
+            <hr class="separateur" />
+          </div>
+          <div class="trends-card-middle">
+            <p class="trends-title">Football</p>
+            <p class="trends-hashtags">
+              <a
+                href="https://www.google.com/search?q=mbapp%C3%A9&hl=fr&sxsrf=AJOqlzWkRAR2ZqcC2huLFy-6XEBjZJ63_w:1678952570797&source=lnms&tbm=nws&sa=X&ved=2ahUKEwj7xc7c-d_9AhUMTKQEHQ80Bn4Q_AUoAXoECAEQAw&biw=1526&bih=722&dpr=1"
+                target="_blank"
+                >#Mbappé</a
+              >
+            </p>
+            <p class="trends-tweets">83,7k Weets</p>
+            <hr class="separateur" />
+          </div>
+          <div class="trends-card-middle" id="trend-card-bottom">
+            <p class="trends-title">Gaming</p>
+            <p class="trends-hashtags">
+              <a
+                href="https://www.google.com/search?q=zelda&client=ubuntu&channel=fs&sxsrf=AJOqlzWz2Kh_XnxTfRledR7ErpCEBBPj0g:1678953080839&source=lnms&tbm=nws&sa=X&ved=2ahUKEwjuhOnP-9_9AhWpUaQEHTs7B4IQ_AUoAnoECAEQBA&biw=1526&bih=722&dpr=1"
+                target="_blank"
+                >#Zelda</a
+              >
+            </p>
+            <p class="trends-tweets">1M Weets</p>
+            <p class="trends-hashtags">
+              <a
+                href="https://www.google.com/search?q=god+of+war+ragnarok&hl=fr&sxsrf=AJOqlzUIIEIga9weok0xmOr99Zq5VGriRg:1678953083886&source=lnms&tbm=nws&sa=X&ved=2ahUKEwj-76LR-9_9AhWqV6QEHfm0AxwQ_AUoA3oECAEQBQ&biw=1526&bih=722&dpr=1"
+                target="_blank"
+                >#GoWRagnarok</a
+              >
+            </p>
+            <p class="trends-tweets">989,6k Weets</p>
+            <p class="trends-hashtags">
+              <a
+                href="https://www.google.com/search?q=final+fantasy+xiv&hl=fr&sxsrf=AJOqlzW-jWA1oca55U2ZMGU5YqDgAdN1yw:1678953087913&source=lnms&tbm=nws&sa=X&ved=2ahUKEwjm6ZjT-9_9AhUhQaQEHTOyDwoQ_AUoAXoECAEQAw&biw=1526&bih=722&dpr=1"
+                target="_blank"
+                >#FFXIV</a
+              >
+            </p>
+            <p class="trends-tweets">3M Weets</p>
+          </div>
+        </div>
+
+        <div class="msg-card-container">
+          <a
+            style="display: block"
+            href="conversation.html"
+            class="msg-page-link"
+          >
+            <div class="msg-user-infos" id="msg-user-infos-1">
+              <div class="msg-user-left">
+                <img
+                  src="images/romain.JPG"
+                  alt="avatar"
+                  class="msg-user-avatar"
+                />
+              </div>
+              <div class="msg-user-right">
+                <p class="msg-username">Romain</p>
+                <p class="msg-newmsg">Messages</p>
+              </div>
+            </div>
+          </a>
+          <a
+            style="display: block"
+            href="conversationRudy.html"
+            class="msg-page-link"
+          >
+            <div class="msg-user-infos">
+              <div class="msg-user-left">
+                <img
+                  src="images/rudy.JPG"
+                  alt="avatar"
+                  class="msg-user-avatar"
+                />
+              </div>
+              <div class="msg-user-right">
+                <p class="msg-username">Rudy</p>
+                <p class="msg-newmsg">Messages</p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            style="display: block"
+            href="conversationMoha.html"
+            class="msg-page-link"
+            id="home-last-message"
+          >
+            <div class="msg-user-infos" id="msg-user-infos-4">
+              <div class="msg-user-left">
+                <img
+                  src="images/Mohamed.JPG"
+                  alt="avatar"
+                  class="msg-user-avatar"
+                />
+              </div>
+              <div class="msg-user-right">
+                <p class="msg-username">Moha</p>
+                <p class="msg-newmsg">Messages</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ajout des fiches de profil en pop up -->
+    <!--Première modale -->
+    <div id="disclaimer1" class="modal-container">
+      <div class="modal-content">
+        <div class="profil-card-top"><a href="#" class="closeBtn">X</a></div>
+
+        <div class="profil-card-middle">
+          <img src="images/fantine.JPG" alt="" class="user-avatar" />
+          <h1 class="user-name">Fantine</h1>
+          <h2 class="user-email">@Fanti</h2>
+          <p class="user-biography">
+            Formatrice à la Wild Code School et par dessus tout, croc's addict.
+          </p>
+        </div>
+
+        <div class="followers-container">
+          <div class="following-bloc">
+            <h2 class="follow-number">750</h2>
+            <h3 class="follow-text">Following</h3>
+          </div>
+          <div class="followers-bloc">
+            <h2 class="follow-number">528</h2>
+            <h3 class="follow-text">Followers</h3>
+          </div>
+        </div>
+
+        <div class="profil-card-bottom">
+          <h2 class="profil-link">Profile</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seconde Modale -->
+    <div id="disclaimer2" class="modal-container">
+      <div class="modal-content">
+        <div class="profil-card-top"><a href="#" class="closeBtn">X</a></div>
+
+        <div class="profil-card-middle">
+          <img src="images/alexvador.JPG" alt="" class="user-avatar" />
+          <h1 class="user-name">Alex</h1>
+          <h2 class="user-email">@Vador</h2>
+          <p class="user-biography">
+            - Luke, je suis tes chaussons.<br />- Nooooooon !
+          </p>
+        </div>
+
+        <div class="followers-container">
+          <div class="following-bloc">
+            <h2 class="follow-number">135</h2>
+            <h3 class="follow-text">Following</h3>
+          </div>
+          <div class="followers-bloc">
+            <h2 class="follow-number">118</h2>
+            <h3 class="follow-text">Followers</h3>
+          </div>
+        </div>
+
+        <div class="profil-card-bottom">
+          <h2 class="profil-link">Profile</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Troisième Modale-->
+    <div id="disclaimer3" class="modal-container">
+      <div class="modal-content">
+        <div class="profil-card-top"><a href="#" class="closeBtn">X</a></div>
+
+        <div class="profil-card-middle">
+          <img src="images/alextrot.JPG" alt="" class="user-avatar" />
+          <h1 class="user-name">Alex</h1>
+          <h2 class="user-email">@Trot'</h2>
+          <p class="user-biography">"Salut. C'est cool."</p>
+        </div>
+
+        <div class="followers-container">
+          <div class="following-bloc">
+            <h2 class="follow-number">457</h2>
+            <h3 class="follow-text">Following</h3>
+          </div>
+          <div class="followers-bloc">
+            <h2 class="follow-number">855</h2>
+            <h3 class="follow-text">Followers</h3>
+          </div>
+        </div>
+
+        <div class="profil-card-bottom">
+          <h2 class="profil-link">Profile</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quatrième modale -->
+    <div id="disclaimer4" class="modal-container">
+      <div class="modal-content">
+        <div class="profil-card-top"><a href="#" class="closeBtn">X</a></div>
+
+        <div class="profil-card-middle">
+          <img src="images/alexrouz.JPG" alt="" class="user-avatar" />
+          <h1 class="user-name">Alex</h1>
+          <h2 class="user-email">@Plaza</h2>
+          <p class="user-biography">
+            J'aime la bouffe et les voyages, et les voyages et la bouffe.
+          </p>
+        </div>
+
+        <div class="followers-container">
+          <div class="following-bloc">
+            <h2 class="follow-number">219</h2>
+            <h3 class="follow-text">Following</h3>
+          </div>
+          <div class="followers-bloc">
+            <h2 class="follow-number">154</h2>
+            <h3 class="follow-text">Followers</h3>
+          </div>
+        </div>
+
+        <div class="profil-card-bottom">
+          <h2 class="profil-link">Profile</h2>
+        </div>
+      </div>
+    </div>
+
+    <div id="navMobile">
+      <div class="navicon">
+        <div class="itemMob">
+          <a href="index.html"><i class="fa-solid fa-house itemnav"></i></a>
+        </div>
+        <div class="itemMob">
+          <a href="trendsMobile.html"
+            ><i class="fa-solid fa-arrow-trend-up itemnav"></i
+          ></a>
+        </div>
+        <div>
+          <a href="#"><img src="images/jade.JPG" alt="photo jade" /></a>
+        </div>
+        <div class="itemMob">
+          <a href="notifications.html"
+            ><i class="fa-solid fa-bell itemnav"></i
+          ></a>
+        </div>
+        <div class="itemMob">
+          <a href="messages.html"
+            ><i class="fa-solid fa-paper-plane itemnav"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

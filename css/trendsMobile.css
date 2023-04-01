@@ -1,0 +1,102 @@
+.trends-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-shadow: var(--ombresCartes);
+  border-radius: 15px;
+}
+
+.trends-mobile-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--rose);
+  width: 100%;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0px;
+}
+
+.trends-mobile-title-text {
+  color: var(--texteRouge);
+}
+
+.global-trendsMobile-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 63px;
+}
+
+.trendsMobile-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: var(--ombresBouttons);
+}
+
+.trendsMobile-card-container:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.trendMobile-title {
+  font-family: "Montserrat", sans-serif;
+  color: var(--blanc);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.trendsMobile-icon-container {
+  background-image: url("../icones/trending-up_curved.svg");
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+}
+
+.trendsMobile-card-middle {
+  display: flex;
+  flex-direction: column;
+  background-color: #aea3a3;
+  width: 100%;
+  border-bottom: solid 3px #aea3a3;
+  padding: 0 15px;
+}
+
+.separateur-trends {
+  padding: 0 10px;
+  height: 1px;
+  color: var(--blanc);
+}
+
+.trendsMobile-title {
+  font-family: "Montserrat", sans-serif;
+  color: var(--texteMarronFonce);
+  font-weight: 700;
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+}
+
+.trendsMobile-hashtags {
+  font-family: "Montserrat", sans-serif;
+  color: #fff6f6;
+  font-weight: 700;
+}
+
+.trendsMobile-hashtags a {
+  text-decoration: none;
+  color: #fff6f6;
+}
+
+.trendsMobile-tweets {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #fff6f6;
+  margin-bottom: 10px;
+}

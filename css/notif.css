@@ -1,0 +1,68 @@
+.notif-container {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: var(--ombresCartes);
+}
+
+.notif-main {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--roseMarron);
+  overflow: hidden;
+  height: 70%;
+  box-shadow: var(--ombresCartes);
+  width: 90%;
+}
+.notif-content {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: var(--roseMarron);
+  height: 100%;
+}
+
+.notif-content:hover {
+  background-color: var(--rosePale);
+}
+
+.notif-content img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: solid 1px white;
+}
+
+.notif-content p {
+  color: var(--blanc);
+  font-size: 13px;
+}
+
+.notif-content h2 {
+  color: var(--blanc);
+  font-size: 14px;
+}
+
+.notif-separate {
+  padding: 0 10px;
+  height: 1px;
+  color: var(--blanc);
+}
+
+.notif-main a {
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+.notif-main a:hover {
+  background-color: var(--rosePale);
+}
+
+#first-notif-msg {
+  padding: 3% 0;
+}

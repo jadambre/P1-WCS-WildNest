@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1663659b59.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f6dcf461c1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="" />
+        </a>
+      </div>
+
+      <div class="items">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="index.html" class="itemnav"
+              ><i class="fa-solid fa-house"></i
+            ></a>
+          </button>
+        </div>
+
+        <div class="dropdown notif">
+          <button class="dropbtn">
+            <a href="#" class="itemnav"><i class="fa-solid fa-bell"></i></a>
+          </button>
+          <div class="dropdown-content-bis">
+            <div class="icon-notif" id="one">
+              <img src="images/romain.JPG" alt="" />
+              <a class="lienItem" href="conversation.html"
+                >New message<br />from Romain
+              </a>
+            </div>
+            <hr class="separate" />
+            <div class="icon-notif">
+              <img src="images/rudy.JPG" alt="" />
+              <a class="lienItem" id="two" href="conversationRudy.html"
+                >New message<br />from Rudy</a
+              >
+            </div>
+            <hr class="separate" />
+            <div class="icon-notif">
+              <img src="images/Mohamed.JPG" alt="" />
+              <a class="lienItem" href="conversationMoha.html"
+                >New message<br />from Mohamed</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="messages.html" class="itemnav"
+              ><i class="fa-solid fa-paper-plane"></i
+            ></a>
+          </button>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            <a href="#" class="itemnav"><i class="fa-solid fa-gear"></i></a>
+          </button>
+          <div class="dropdown-content">
+            <a class="lienItem" href="#">Parameter</a>
+            <hr class="separate-two" />
+            <a class="lienItem" id="three" href="#">Log out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="elements-container">
+      <div class="messages-title">
+        <h1 class="messages-title-text">MESSAGES</h1>
+      </div>
+
+      <div class="messages-container">
+        <div class="message-card-container">
+          <a
+            style="display: block"
+            href="conversation.html"
+            class="conversation-link"
+          >
+            <div class="message-preview" id="first-message-preview">
+              <img
+                src="./images/romain.JPG"
+                alt="avatar"
+                class="message-preview-avatar"
+              />
+              <div class="name-message-preview">
+                <h2 class="user-name-preview">Romain @Romain-Constant</h2>
+                <p class="new-message">Message</p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            style="display: block"
+            href="conversationRudy.html"
+            class="conversation-link"
+          >
+            <div class="message-preview">
+              <img
+                src="./images/rudy.JPG"
+                alt="avatar"
+                class="message-preview-avatar"
+              />
+              <div class="name-message-preview">
+                <h2 class="user-name-preview">Rudy @Rudy59128</h2>
+                <p class="new-message">Message</p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            style="display: block"
+            href="conversationMoha.html"
+            class="conversation-link"
+          >
+            <div class="message-preview">
+              <img
+                src="./images/Mohamed.JPG"
+                alt="avatar"
+                class="message-preview-avatar"
+              />
+              <div class="name-message-preview">
+                <h2 class="user-name-preview">Moha @MohamedAmarPro</h2>
+                <p class="new-message read-message">Message</p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            style="display: block"
+            href="conversationVal.html"
+            class="conversation-link"
+          >
+            <div class="message-preview" id="last-message-preview">
+              <img
+                src="./images/val.JPG"
+                alt="avatar"
+                class="message-preview-avatar"
+              />
+              <div class="name-message-preview">
+                <h2 class="user-name-preview">Val @mlAgostini</h2>
+                <p class="new-message read-message">Message</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="navMobile">
+      <div class="navicon">
+        <div class="itemMob">
+          <a href="index.html"><i class="fa-solid fa-house itemnav"></i></a>
+        </div>
+        <div class="itemMob">
+          <a href="trendsMobile.html"
+            ><i class="fa-solid fa-arrow-trend-up itemnav"></i
+          ></a>
+        </div>
+        <div>
+          <a href="#"><img src="images/jade.JPG" alt="photo chat" /></a>
+        </div>
+        <div class="itemMob">
+          <a href="notifications.html"
+            ><i class="fa-solid fa-bell itemnav"></i
+          ></a>
+        </div>
+        <div class="itemMob">
+          <a href="messages.html"
+            ><i class="fa-solid fa-paper-plane itemnav"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

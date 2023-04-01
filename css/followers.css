@@ -1,0 +1,37 @@
+.followers-page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.followers-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: var(--rose);
+  width: 100%;
+  box-shadow: var(--ombresCartes);
+  margin-bottom: 30px;
+  position: sticky;
+  top: 99px;
+}
+
+.followers-header h1 {
+  font-size: 30px;
+  color: var(--texteRouge);
+}
+
+.followers-card-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.followers-profilcard {
+  margin-bottom: 30px;
+}
